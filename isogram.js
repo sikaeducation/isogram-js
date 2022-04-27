@@ -1,4 +1,4 @@
-export function isIsogram(phrase: string): boolean {
+export function isIsogram(phrase) {
   const appearances = new Set();
 
   for (const letter of phrase) {
@@ -16,7 +16,7 @@ export function isIsogram(phrase: string): boolean {
   return true;
 }
 
-function isLetter(letter: string): boolean {
+function isLetter(letter) {
   if (
     (letter.charCodeAt(0) >= 97 && letter.charCodeAt(0) <= 122) ||
     (letter.charCodeAt(0) >= 65 && letter.charCodeAt(0) <= 90)
